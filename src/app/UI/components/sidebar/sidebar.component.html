@@ -1,12 +1,10 @@
-<div class="fixed top-0 h-screen w-16 bg-slate-800 py-5">
-    <div class="flex flex-col items-center h-full mt-5">
+<div class="sidebar-main">
+    <div class="flex flex-col items-center h-full">
         <div class="cursor-pointer p-5 hover:bg-slate-700" *ngFor="let item of list" [matTooltip]="item.name" [matTooltipPosition]="'right'" [routerLink]="'admin/'+item.url">
             <img src="assets/icons/{{item.icon}}.svg">
         </div>
-        <div class="flex-1 h-full justify-end items-end">
-            <div class="flex items-end h-full text-white text-xs pb-3">
-                {{version}}
-            </div>
+        <div class="h-full flex items-end text-white text-xs pb-3">
+            {{version}}
         </div>
     </div>
 </div>

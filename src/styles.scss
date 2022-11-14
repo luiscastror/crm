@@ -23,10 +23,30 @@ body {
     @apply bg-gray-600;
 
     &:hover {
-        @apply bg-gray-900
+        @apply bg-gray-800
     }
 }
 
-.navbar {
-    @apply bg-white h-16 ml-16 mt-3 flex flex-row items-center justify-between px-6;
+.sidebar-main {
+    @apply bg-gray-800 fixed h-screen w-16;
+}
+
+.navbar-main {
+    @apply bg-white h-16 ml-16 px-4 flex flex-row items-center justify-between border-b-2 text-gray-300;
+}
+
+.sub-navbar-main {
+    @apply bg-white h-8 ml-16 px-4 flex flex-row items-center justify-between border-b-2 text-gray-300;
+}
+
+.content-main {
+    @apply pl-20 pt-5 pr-4;
+}
+
+.item-navbar {
+    @apply cursor-pointer ml-1 px-2 py-0.5;
+
+    &:hover {
+        @apply rounded bg-gray-50;
+    }
 }
